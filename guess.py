@@ -39,6 +39,8 @@ def guess_game():
             print(f"The answer was {answer}")
         elif guess_number == answer:
             continue_guessing  = False
+        elif guess_number != answer:
+            print("Guess again.")
 
 while input("Do you want to play a game of Guess The Number? Type 'y' or 'n': ") == "y":
     print("\n" * 20)
